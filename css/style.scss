@@ -5,6 +5,7 @@
     --light: #fff;
     --gray: #ccc;
     --dark: #000;
+    --dark-gray: #1e1e1e;
 }
 * {
     ul {
@@ -19,13 +20,20 @@ body {
     background-color: var(--gray);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     margin: 0;
+
+    h2 {
+        text-align: center;
+    }
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color: #fff;
+    background-color: var(--dark-gray);
     padding: 20px 0;
+    border-bottom: 3px solid var(--dark-gray);
+    margin-bottom: 50px;
+    color: var(--light);
 
     .nav-left, .nav-right {
         
@@ -37,6 +45,15 @@ nav {
 
             li {
 
+                a {
+                    color: var(--light);
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        color: darken(red, 25%);
+                        transition: 0.3s ease-in-out;
+                    }
+                }
             }
                 
         }
@@ -92,20 +109,65 @@ nav {
                     .link-button {
                         padding: 10px 20px;
                         background-color: var(--light);
+                        transition: 0.3s ease-in-out;    
+
+                        &:hover {
+                            background-color: darken(red, 25%);
+                            color: var(--light);
+                            transition: 0.3s ease-in-out;    
+                        }
                     }
                 }
             }
         }
     }
-    #about {
-    
-    }
-    #contact {
-    
-    }    
+   
 }
+#about {
+    background-color: var(--dark-gray);
+    color: var(--light);
+    padding: 100px 0;
+    
+    p {
+        width: 50%;
+        margin: 0 auto;
+        
+    }
+}
+#contact {
+    padding: 50px 0;
+    
+    p {
+        text-align: center;
+    }
+    form {
+        width: 50%;
+        margin: 0 auto;
+
+        input, textarea {
+            padding: 10px;
+            border: none;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type=submit] {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #fff;
+            transition: 0.3s ease-in-out;    
+
+            &:hover {
+                background-color: darken(red, 25%);
+                color: var(--light);
+                transition: 0.3s ease-in-out;    
+            }
+        }    
+    }
+}    
 footer {
-    background: var(--dark);
+    background: var(--dark-gray);
     margin-top: 50px;
     padding: 20px 0;
     p {

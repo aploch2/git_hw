@@ -3,6 +3,7 @@
   --light: #fff;
   --gray: #ccc;
   --dark: #000;
+  --dark-gray: #1e1e1e;
 }
 
 * ul {
@@ -20,17 +21,35 @@ body {
   margin: 0;
 }
 
+body h2 {
+  text-align: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--dark-gray);
   padding: 20px 0;
+  border-bottom: 3px solid var(--dark-gray);
+  margin-bottom: 50px;
+  color: var(--light);
 }
 
 nav .nav-left ul, nav .nav-right ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
+
+nav .nav-left ul li a, nav .nav-right ul li a {
+  color: var(--light);
+  transition: 0.3s ease-in-out;
+}
+
+nav .nav-left ul li a:hover, nav .nav-right ul li a:hover {
+  color: maroon;
+  transition: 0.3s ease-in-out;
 }
 
 nav .nav-left {
@@ -85,10 +104,63 @@ nav .nav-right li:nth-child(2) {
 .wrapper #projects .project .project-info .project-link .link-button {
   padding: 10px 20px;
   background-color: var(--light);
+  transition: 0.3s ease-in-out;
+}
+
+.wrapper #projects .project .project-info .project-link .link-button:hover {
+  background-color: maroon;
+  color: var(--light);
+  transition: 0.3s ease-in-out;
+}
+
+#about {
+  background-color: var(--dark-gray);
+  color: var(--light);
+  padding: 100px 0;
+}
+
+#about p {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#contact {
+  padding: 50px 0;
+}
+
+#contact p {
+  text-align: center;
+}
+
+#contact form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#contact form input, #contact form textarea {
+  padding: 10px;
+  border: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#contact form input[type=submit] {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+#contact form input[type=submit]:hover {
+  background-color: maroon;
+  color: var(--light);
+  transition: 0.3s ease-in-out;
 }
 
 footer {
-  background: var(--dark);
+  background: var(--dark-gray);
   margin-top: 50px;
   padding: 20px 0;
 }
