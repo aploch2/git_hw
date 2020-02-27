@@ -1,4 +1,20 @@
+// Import Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 :root {
     --light: #fff;
+    --gray: #ccc;
     --dark: #000;
+}
+body {
+    background-color: var(--gray);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.page-head {
+    width: 100%;
+    text-align: center;
+
+    h1 {
+        font-size: 3em;
+    }
 }
