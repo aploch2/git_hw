@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" media="screen">
-    <title>Project Links</title>
+    <title>Mock Portfolio</title>
 </head>
 <body>
     <nav>
         <div class="nav-left">
             <ul>
-                <li><a href="">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </div>
         <div class="page-head-middle">
-            <h1>Project List</h1>
+            <h1>Mock Portfolio</h1>
             <p>Quick access to my projects</p>
         </div>
         <div class="nav-right">
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -98,14 +98,28 @@
                 </div>
             </div>
         </section>
-        <section id="about">
-    
-        </section>
-        <section id="contact">
-    
-        </section>
     
     </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Austin Ploch. I am a perspective web developer studying at Waukesha County Technical College. I first got interested in web design when I took a class during my junior year of high school. It started as just a fun course to take to fill the schedule. Shortly after, I realized I really enjoyed learning HTML and CSS. I would go home after school every day and learn on my own, until I was very far ahead of the class. After the semester ended, I pretty much dropped web design and went back to what I wanted to study in college, graphic design. I didn't do anything with web design until a year and a half later when I applied to the Art Institute of Minneapolis and my advisor suggested I study web design instead of graphic design. I didn't do much to expand my knowledge at that school since it was an art school, so I spent the first year doing drawing and painting. I found myself very unhappy with the program and I moved home and started at WCTC. In the future, I plan on working independently, but I still have a long way to go until I can achieve that. </p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you want to contact me, send me a message and I will respond within 48 hours.</p>
+        <form action="submitted.php" method="post">
+            <!-- <label for="name">Name:*</label><br> -->
+            <input type="text" name="name" placeholder="Name"><br>
+            <!-- <label for="name">Email:*</label><br> -->
+            <input type="text" name="email" placeholder="Email"><br>
+            <!-- <label for="name">Subject:*</label><br> -->
+            <input type="text" name="subject" placeholder="Subject"><br>
+            <!-- <label for="name">Message:*</label><br> -->
+            <textarea name="message" rows="8" cols="80" placeholder="Enter message here..."></textarea><br>
+            <input type="submit" name="submit" value="Send">
+          </form>
+    </section>
+
     <footer>
         <p>&copy; Copyright 2020 - Austin Ploch</p>
     </footer>
